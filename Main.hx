@@ -10,7 +10,7 @@ class Main {
 
   }
 
-  public function new() {}
+  inline public function new() {}
 
   inline static function myJoinPoint(param1 : Int, param2 : Int)
   {
@@ -18,7 +18,7 @@ class Main {
     Aspect.joinpoint(param1, param2, " is printed");
   }
 
-  public function myNormalMethod()
+  inline public function myNormalMethod()
   {
     // Calling the join point from a normal function
     myJoinPoint(1, 2);
