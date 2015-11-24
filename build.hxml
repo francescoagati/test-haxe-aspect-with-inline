@@ -3,3 +3,10 @@
 -lib haxe-aspect
 -dce full
 -D analyzer
+--next
+-js main-different.js
+-main Main
+-lib haxe-aspect
+-dce full
+-D analyzer
+-D differentadvice
